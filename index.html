@@ -116,24 +116,36 @@
     </main>
     <footer class="container">
       <div class="row d-flex justify-content-center" style="height: 48px;">
-        <div class="d-flex h-100 col-12 col-lg-6 justify-content-center align-items-center text-center bg-secondary bg-opacity-25">
+        <!-- following divs will appear only from lg breakpoint -->
+        <div class="d-lg-none d-flex h-100 col-12 justify-content-center align-items-center text-center bg-secondary bg-opacity-25">
           Suivez-nous sur les réseaux sociaux
         </div>
-        <div class="h-100 col-12 col-lg-6 d-flex justify-content-center bg-secondary bg-opacity-25">
+        <div class="d-lg-none h-100 col-12 d-flex justify-content-center bg-secondary bg-opacity-25">
+          <ul class="h-100 list-group list-group-horizontal" >
+            <li class="list-group-item bg-transparent border-0"><a href="#"><img class="h-100" src="images/f_logo_RGB-Blue_72.png" alt="logo facebook"></a></li>
+            <li class="list-group-item bg-transparent border-0"><a href="#"><img class="h-100" src="images/Instagram_Glyph_Gradient_RGB.png" alt="logo instragram"></a></li>
+            <li class="list-group-item bg-transparent border-0"><a href="#"><img class="h-100" src="images/Twitter social icons - circle - blue.png" alt="logo twitter"></a></li>
+          </ul>
+        </div> 
+
+        <!-- following divs will appear only before lg breakpoint -->
+        <div class="d-none d-lg-flex h-100 col-lg-6 justify-content-end align-items-center text-center bg-dark bg-opacity-25">
+          Suivez-nous sur les réseaux sociaux
+        </div>
+        <div class="d-none d-lg-flex h-100 col-lg-6 justify-content-start bg-dark bg-opacity-25">
           <ul class="h-100 list-group list-group-horizontal" >
             <li class="list-group-item bg-transparent border-0"><a href="#"><img class="h-100" src="images/f_logo_RGB-Blue_72.png" alt="logo facebook"></a></li>
             <li class="list-group-item bg-transparent border-0"><a href="#"><img class="h-100" src="images/Instagram_Glyph_Gradient_RGB.png" alt="logo instragram"></a></li>
             <li class="list-group-item bg-transparent border-0"><a href="#"><img class="h-100" src="images/Twitter social icons - circle - blue.png" alt="logo twitter"></a></li>
           </ul>
         </div>
+
+        <!-- following divs is all time visible -->        
         <div  class="col-12 d-flex justify-content-center align-items-center text-center border-top pt-2 bg-secondary bg-opacity-25" 
               style="height: 48px;">
           Copyright © - Tous droits réservés - plan du site - mentions légales
         </div>
       </div>
-      
-      
-     
     </footer>
 
 
