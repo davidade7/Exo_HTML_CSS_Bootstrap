@@ -1,0 +1,16 @@
+/* This css files only modifies few arguments of bootstrap classes*/
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 50%;
+  border: 5px solid black;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0.5;
+}
