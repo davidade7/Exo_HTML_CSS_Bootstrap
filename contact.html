@@ -35,6 +35,68 @@
       </div>
     </nav>
 
+    <main class="container">
+      <form id="contact-form" role="form" aria-describedby="formHelp">
+        <div class="controls">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="form-group"> 
+                <label for="form_name">Prénom *</label> 
+                <input id="form_name" type="text" name="name" class="form-control" placeholder="Entrez votre prénom *" required="required" data-error="Le prénom est requis."> 
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="form-group"> 
+                <label for="form_lastname">Nom *</label> 
+                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Entrez votre nom *" required="required" data-error="Le nom est requis."> 
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="form-group"> 
+                <label for="form_email">Email *</label> 
+                <input id="form_email" type="email" name="email" class="form-control" placeholder="Entrez votre adresse e-mail *" required="required" data-error="Une adresse mail valide est requise."> 
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="form-group"> 
+                <label for="form_need">Spécifiez l'objet *</label> 
+                <select id="form_need" name="need" class="form-control" required="required" data-error="Vous devez sélectionner un objet.">
+                  <option value="" selected disabled>--Sélectionnez l'objet--</option>
+                  <option>Inscription évènement</option>
+                  <option>Renseignements sur l'association</option>
+                  <option>Autre</option>
+                </select> 
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 mb-3">
+              <div class="form-group"> 
+                <label for="form_message">Message *</label> 
+                <textarea id="form_message" name="message" class="form-control" placeholder="Le champs est à vous, écrivez votre message ici." rows="4" required="required" data-error="N'oubliez pas votre message."></textarea> 
+              </div>
+            </div>
+            <div class="col-md-12 mb-3">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="Checkbox1">
+                <label class="form-check-label" for="Checkbox1">Je souhaite m'inscrire à la newsletter!</label>
+              </div>
+            </div>
+            <div id="formHelp" class="form-text mb-3">
+               Vos informations personnelles ne seront pas partagées avec d'autres personnes.
+            </div>
+            <div class="col-md-12 mb-3"> 
+              <input type="submit" class="btn btn-success btn-send pt-2 btn-block " value="Envoyer"> 
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+
     <footer class="container-fluid">
       <div class="row d-flex justify-content-center" style="height: 64px;">
         <!-- following divs will appear only from lg breakpoint -->
